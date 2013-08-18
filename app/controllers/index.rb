@@ -3,6 +3,7 @@ get '/' do
 end
 
 get '/skills/:skill' do
+  @skill = params[:skill]
   erb :skills
 end
 
