@@ -3,7 +3,6 @@ get '/' do
 end
 
 get '/skills/:skill' do
-  @skill = params[:skill]
   erb :skills
 end
 
@@ -16,6 +15,7 @@ get '/meals' do
             "Sushi",
             "Linguini",
             "Onigilli"]
+
   erb :meals
 end
 
